@@ -1,0 +1,52 @@
+.mobile-nav{display:none}
+@media(max-width:680px){
+  body{overflow-x:hidden}
+  .main-content{padding-bottom:78px}
+  .topbar{position:sticky;top:0;z-index:4;background:rgba(255,255,255,.96);backdrop-filter:blur(12px)}
+  .topbar-actions{gap:8px}
+  .topbar-actions>.icon-button{width:40px;height:40px}
+  .mobile-title strong{font-size:16px}
+  .mobile-nav{position:fixed;display:flex;z-index:8;bottom:0;left:0;right:0;height:70px;padding:8px 7px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(38,26,24,.08);justify-content:space-around}
+  .mobile-nav button{min-width:58px;flex:1;max-width:92px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:transparent;color:#898381;border-radius:9px;font-size:10px;font-weight:600;padding:5px 2px}
+  .mobile-nav button.active{background:var(--red-soft);color:var(--red)}
+  .mobile-nav svg{width:19px;height:19px}
+  .page-container{padding:25px 14px}
+  .page-intro{gap:17px}
+  .page-intro .primary-button{width:100%;min-height:46px}
+  .surface-panel{padding:17px 14px;border-radius:10px}
+  .metric-grid{gap:10px}
+  .metric-card{min-height:126px}
+  .dashboard-grid{gap:14px}
+  .highlight-panel{padding:24px 20px}
+  .budget-row{grid-template-columns:42px minmax(0,1fr);gap:10px;padding:15px 0}
+  .budget-row .budget-total{grid-column:2;font-size:12px}
+  .budget-row .status{grid-column:2}
+  .budget-card{padding:15px 12px}
+  .budget-main{align-items:flex-start;gap:11px}
+  .budget-actions{gap:8px;flex-wrap:wrap}
+  .budget-actions strong{width:100%;font-size:15px}
+  .budget-actions select{flex:1;min-height:38px}
+  .table-wrap{margin:0 -14px;padding:0 14px}
+  table{min-width:610px}
+  th,td{padding:13px 8px}
+  .settings-nav{margin:0 -4px;padding-bottom:4px;scrollbar-width:none}
+  .settings-nav::-webkit-scrollbar{display:none}
+  .settings-nav button{padding:10px 11px;min-height:42px}
+  .settings-content{min-height:0}
+  .finance-hero{min-height:0;margin:0 -1px 14px;padding:25px 21px}
+  .finance-hero h2{font-size:28px}
+  .catalog-shortcut{padding:16px 14px}
+  .modal-backdrop{padding:10px;align-items:end}
+  .modal-card{max-height:calc(100vh - 20px);border-radius:14px 14px 0 0;padding:19px 15px calc(19px + env(safe-area-inset-bottom))}
+  .modal-header{margin-bottom:20px}
+  .modal-header h2{font-size:23px}
+  .form-grid{gap:14px}
+  .modal-card input,.modal-card select,.settings-content input{min-height:45px}
+  .modal-actions{position:sticky;bottom:calc(-19px - env(safe-area-inset-bottom));background:#fff;margin:0 -15px -19px;padding:14px 15px calc(14px + env(safe-area-inset-bottom));z-index:2}
+  .modal-actions>*{flex:1;min-height:44px}
+  .lines-heading{align-items:flex-start;flex-direction:column}
+  .lines-heading .outline-button{width:100%;min-height:42px}
+  .material-line{grid-template-columns:minmax(0,1fr) 70px 32px;gap:5px}
+  .material-line input,.material-line select{padding:10px 7px;font-size:12px}
+  .toast{left:14px;right:14px;bottom:82px;justify-content:center;text-align:center}
+}
